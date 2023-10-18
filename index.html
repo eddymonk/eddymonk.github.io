@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Website</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif; /* Apply a custom font */
+        background-color: #e0f2f1; /* Light blue background color */
+        margin: 0; /* Remove default margin to fill the entire viewport */
+      }
+
+      .header {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .content {
+        text-align: left; /* Align text to the left */
+        margin-top: 100px;
+        margin-left: 20px; /* Add margin to push content to the left */
+        padding-left: 100px;
+      }
+
+      .icon {
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      .logo {
+        width: 50px; /* Set the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      h1 {
+        font-size: 2.5em; /* Increase the font size */
+        font-family: "Verdana", sans-serif; /* Apply a different font for h1 */
+      }
+
+      p {
+        font-size: 1.2em; /* Increase the font size for paragraphs */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="logo.png" alt="Logo" />
+    </div>
+
+    <!-- Your content goes here -->
+
+    <div class="content">
+      <h1>Chat Stay</h1>
+      <p>This is a chatbot-powered website. Feel free to ask any questions.</p>
+      <img src="illustration.gif" alt="Illustration" width="400" />
+      <!-- Adjust the width as needed -->
+    </div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script
+      src="https://mediafiles.botpress.cloud/8ce746a1-55d4-43b7-82df-929fe46e0fba/webchat/config.js"
+      defer></script>
+  </body>
+</html>
