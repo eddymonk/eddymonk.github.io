@@ -6,21 +6,28 @@
     <title>Chatbot Website</title>
     <style>
       body {
-        font-family: "Arial", sans-serif; /* Apply a custom font */
-        background-color: #e0f2f1; /* Light blue background color */
-        margin: 0; /* Remove default margin to fill the entire viewport */
+        font-family: "Arial", sans-serif;
+        background-color: #c7eeff;
+        margin: 0;
       }
 
-      .header {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+      .navbar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: auto;
+        padding-left: 100px;
       }
 
       .content {
-        text-align: left; /* Align text to the left */
-        margin-top: 100px;
-        margin-left: 20px; /* Add margin to push content to the left */
+        text-align: left;
+        padding: 20px;
         padding-left: 100px;
       }
 
@@ -29,18 +36,59 @@
         margin-left: 10px;
       }
 
-      .logo {
-        width: 50px; /* Set the width of the logo */
-        height: auto; /* Maintain aspect ratio */
-      }
-
       h1 {
-        font-size: 2.5em; /* Increase the font size */
-        font-family: "Verdana", sans-serif; /* Apply a different font for h1 */
+        font-size: 2.5em;
+        font-family: "Verdana", sans-serif;
       }
 
       p {
-        font-size: 1.2em; /* Increase the font size for paragraphs */
+        font-size: 1.2em;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .footer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: transparent;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+        padding-left: 100px;
+      }
+
+      .team-card {
+        border-radius: 5px;
+        flex: 1;
+        width: 1rem;
+        margin: 10px;
+      }
+
+      .team-card img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 600px) {
+        .content {
+          padding: 10px;
+        }
+        .icon {
+          margin-top: 100px;
+        }
+        .footer {
+          flex-direction: column;
+          align-items: flex-start; /* Align card content vertically */
+          padding-left: 0;
+        }
+        .team-card {
+          margin: 10px 0;
+        }
       }
     </style>
   </head>
@@ -50,13 +98,33 @@
     <div class="content">
       <h1>Chat Stay</h1>
       <p>This is a chatbot-powered website. Feel free to ask any questions.</p>
+      <p>
+        So far thats the prototype of our chatbot that will help property owner
+        to manage all their guests.
+      </p>
+      <p>Feel free to ask any questions and try it yourself.</p>
+
       <img src="illustration.gif" alt="Illustration" width="400" />
-      <!-- Adjust the width as needed -->
     </div>
 
     <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
     <script
       src="https://mediafiles.botpress.cloud/8ce746a1-55d4-43b7-82df-929fe46e0fba/webchat/config.js"
       defer></script>
+
+    <div class="footer">
+      <div class="team-card">
+        <img src="edo.jpg" alt="Edoardo" width="70px" />
+        <h3>Edoardo Monaco</h3>
+        <p>Web Developer</p>
+        <p>Email: edoardo.monaco@1510@gmail.com</p>
+      </div>
+      <div class="team-card">
+        <img src="edo.jpg" alt="Aitor" width="70px" />
+        <h3>Aitor Alonso</h3>
+        <p>Data Analysis</p>
+        <p>Email: aitor@example.com</p>
+      </div>
+    </div>
   </body>
 </html>
